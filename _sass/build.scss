@@ -1,0 +1,50 @@
+$primary  : #154984;
+$secondary : #EBB22C;
+$danger   : #E01F5B;
+$success  : #2E9145;
+$warning  : #EBB22C;
+$info     : #2F8AB8;
+$blue-100 : #E9F2FC;
+$blue-300 : #91BCEE;
+$blue-500 : #3987E0;
+$blue-700 : #18559A;
+$grey-700 : #4A5568;
+$grey-500 : #A0AEC0;
+$grey-300 : #E2E8F0;
+
+$grid-gutter-width: 32px;
+$body-bg : #F7FAFC;
+$body-color: #4A5568;
+$enable-gradients : true;
+$link-color: $blue-500;
+$border-radius-lg : 2rem;
+
+$input-btn-padding-y: .5rem;
+$input-btn-padding-x: 1rem;
+
+$input-btn-padding-y-lg: .7rem;
+$input-btn-padding-x-lg: 1.25rem;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "danger": $danger,
+  "success": $success,
+  "warning": $secondary,
+  "info": $info,
+  "blue-700" : $blue-700,
+  "blue-500" : $blue-500,
+  "blue-300" : $blue-300,
+  "blue-100" : $blue-100,
+  "grey-700" : $grey-700,
+  "grey-500" : $grey-500,
+  "grey-300" : $grey-300,
+);
+
+$paragraph-margin-bottom: 1.5rem;
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "custom";
+@import "accordion";
+@import "sidenav";
+@import "nav";

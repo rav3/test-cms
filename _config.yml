@@ -1,0 +1,89 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you: 
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: Build differently with APEX
+email: your-email@example.com
+description: >- # this means to ignore newlines until "baseurl:"
+    Your central point to manage, monitor and harden security for APIs within the Whole-of-Government.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: jekyllrb
+github_username:  jekyll
+version: 2.0.0
+# Build settings
+sass:
+  sass_dir: _sass
+
+collections_dir: collections
+collections:
+  landing:
+    title: 'Home'
+    permalink: /landing/
+    link-prod: '#/home/landing'
+    img: ../assets/images/get-started.png
+    desc: >-
+    output: true
+    order: 0
+  getStarted:
+    title: 'Get Started'
+    permalink: /getStarted/
+    link-prod: '#/home/getStarted'
+    img: ../assets/images/get-started.png
+    desc: >-
+      Find out how to get up and running with APEX, from signing up to what information we need from you to setup a account with us.
+    output: true
+    order: 1
+  learnEssentials:
+    title: 'Learn Essentials'
+    permalink: /learnEssentials/
+    link-prod: '#/home/learnEssentials'
+    img: ../assets/images/learn-essentials.png
+    desc: >-
+      Find out how to get up and running with APEX, from signing up to what information we need from you to setup a account with us.
+    output: true
+    order: 2
+  commonQuestions:
+    title: 'Common Questions'
+    permalink: /commonQuestions/
+    link-prod: '#/home/commonQuestions'
+    img: ../assets/images/common-questions.png
+    desc: >-
+      Hear what people are saying and find answers to the questions we get.
+    output: true
+    order: 3
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

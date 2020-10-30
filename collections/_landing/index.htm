@@ -1,0 +1,92 @@
+---
+title : Home
+layout: layout-default
+permalink: /landing/
+---
+<section class="d-flex align-items-center h-45vh">
+    <div class="container position-relative">
+        <div class="header-img">
+            <div class="col-lg-9 offset-lg-4 col-md-12">
+                <img class="mx-auto d-block img-fluid" src="../assets/images/header.png" alt="">
+            </div>
+        </div>
+        
+        <div class="row d-flex align-items-center">
+            <div class="col-md-12 col-lg-4">
+                <header class="mb-4">
+                    <h1 class="header text-primary mb-4">{{site.title}}</h1>
+                    <h4 class="text-info">{{site.description}}</h4>
+                </header>
+                <a href="" class="btn btn-lg btn-primary">Find out more →</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-white d-flex align-items-center h-45vh">
+    <div class="container">
+        <div class="row mb-4">
+            <div class="col">
+                <h2 class="text-primary">The platform for secure digital services</h2>
+                <p class="text-info">APEX makes it simple to publish, maintain, monitor and secure your APIs.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <h4 class="text-grey-700 mb-4">Management</h4>
+                <img class="mb-4" src="../assets/images/management.png" alt="">
+                <p>Externalize your data and services as APIs.
+                    Drive partner adoption and provide deep
+                    insights to accelerate your digital transformation</p>
+            </div>
+            <div class="col-md-4">
+                <h4 class="text-grey-700 mb-4">Security</h4>
+                <img class="mb-4" src="../assets/images/security.png" alt="">
+                <p>Balance demands of opening up your applications and APIs with partners and digital channels with enterprise grade security.</p>
+            </div>
+            <div class="col-md-4">
+                <h4 class="text-grey-700 mb-4">Microservices</h4>
+                <img class="mb-4" src="../assets/images/microservice.png" alt="">
+                <p>Provides service discovery, security enforcement and audting of microservices on a variety of containerization and cloud platforms.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container text-center">
+        <div class="row mb-4">
+            <div class="col-md-10 col-sm-12 offset-md-1">
+                <div class="row">
+                    <div class="col">
+                        <h2 class="text-primary">APEX scales with you</h2>
+                        <p class="text-info">APEX offers a wider range of customer service tools for projects of all sizes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="card-deck">
+                    {% assign collections = site.collections | sort: "order" %}
+                    {% for collection in collections %}
+                        {% if collection.label !='posts' and collection.label !='landing' %}
+                        <div class="card card-hoverable border-0 pb-4">
+                            <img src="{{collection.img}}" alt="" class="card-img-top w-80">
+                            <div class="card-body">
+                                <h4 class="card-title text-grey-700">
+                                    {{collection.title}}
+                                </h4>
+                                <p class="card-text">{{collection.desc}}</p>
+                            </div>
+                            {% if jekyll.environment == "production" %}
+                                <a href="{{collection.link-prod}}" class="card-link mt-auto stretched-link">Find out more →</a>
+                            {% else %}
+                                <a href="{{collection.permalink}}" class="card-link mt-auto stretched-link">Find out more →</a>
+                            {% endif %}
+                        </div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

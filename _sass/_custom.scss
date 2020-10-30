@@ -1,0 +1,79 @@
+h1{
+    &.header{
+        font-size: 3rem;
+    }
+}
+
+.header-img{
+    position:absolute;
+    top: -120px;
+    right: 0;
+    @include media-breakpoint-down(md){
+        top: 0;
+        position:relative;
+    }
+}
+
+section{
+    padding: 4rem;
+    @include media-breakpoint-down(md){
+        padding: 2rem;
+    }
+    &.h-45vh{
+       height: 580px;
+       @include media-breakpoint-down(md){
+           height: auto;
+       }
+   }
+   &.h-35vh{
+       height: 35vh;
+   }
+}
+
+.card{
+    &.card-hoverable{
+        transition: all 0.3s;
+        border-radius:10px;
+
+        justify-content: center;
+        
+        background-color: $white;
+        &.h-456{
+            min-height: 456px;
+            @extend .pb-4;
+        }
+        img{
+            transition: opacity 0.3s;
+
+            &.w-80{
+                width: 80%;
+                margin: 0 auto;
+            }
+        }
+        &:hover{
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+        
+    }   
+}
+
+ul.footer-bottom-list{
+    padding:0;
+    li{
+        margin-right: 1rem;
+        display: inline-block;
+        a{
+            color: $light;
+        }
+    }
+}
+
+.icon16x16{
+    width: 32px;
+    height: 32px;
+    @extend .mb-2;
+}
+
+hr{
+    border-color: $grey-700;
+}

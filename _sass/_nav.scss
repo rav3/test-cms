@@ -1,0 +1,11 @@
+.nav-top-custom{
+    .nav-link{
+        border-radius: 0;
+        padding: 1rem;
+        &.active{
+            color: $primary; 
+            background-color: transparent;
+            border-bottom: 3px solid $primary;
+        }
+    }
+}

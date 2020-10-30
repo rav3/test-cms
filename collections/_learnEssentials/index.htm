@@ -1,0 +1,493 @@
+---
+layout: layout-sidenav
+title : Learn Essentials
+subtitle : These guides provide a brief overview of APEX and the necessary for our agency partners to get on-boarded with us. The intended audience for these guides are our Agency Partners and Developers that have no prior experience in using an API Gateway.
+headerimg : ../assets/images/learn-essentials.png
+---
+<div class="tab-pane fade show active" id="v-pills-overview" role="tabpanel" aria-labelledby="v-pills-overview-tab">
+    <div class="row">
+        <div class="col">
+            <h3 class="text-primary mb-4">Overview</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="card-deck">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">API Providers</h5>
+                        <p class="card-text">The back-end resource provider that expose or serve the respective function.</p>
+                        <p class="card-text">
+                            <a href="#v-pills-pv-projects" data-toggle="tab" role="tab" aria-controls="v-pills-pv-projects">Learn more about the provider workflow →</a>
+                        </p>
+                        <p class="card-text"></p>
+                            <a href="#">Download the detailed guide →</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">API Consumers</h5>
+                        <p class="card-text">The client that consumes APIs.</p>
+                        <p class="card-text">
+                            <a href="#v-pills-con-create-app" data-toggle="tab" aria-controls="v-pills-con-create-app">Learn more about the consumer workflow →</a>
+                        </p>
+                        <p class="card-text">
+                            <a href="#">Download the detailed guide →</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 mt-4">
+            <h5>What is a API?</h5>
+            <p>A set of functions that allow the creation of applications which access the features or data from a Resource Provider</p>
+        </div>
+        <div class="col-12 mt-4">
+            <h5>What is a APP?</h5>
+            <p>A logical collection of APIs, and allow you to use a single access token to invoke a collection of APIs and to subscribe to one API multiple times with different SLA levels</p>
+        </div>
+    </div>
+</div>
+<div class="tab-pane fade" id="v-pills-preperations" role="tabpanel" aria-labelledby="v-pills-pv-preperations-tab">
+    <div class="row">
+        <div class="col">
+            <h3 class="text-primary mb-4">API Preparation and Essentials</h3>
+            <p>This section served as an elaboration of the steps, and other miscellaneous information that might be of interest. It will give everyone a good idea on what are needed to prepare before coming into APEX.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="accordion" id="accordionExample">
+                <!-- API Definition Language -->
+                
+                <div class="card">
+                    <div class="card-header" id="heading1">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                API Definition Language
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <p class="card-text">APEX platform supports the following API definition language.</p>
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Definition Language</th>
+                                        <th scope="col">API Standard</th>
+                                        <th scope="col">Link</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Swagger</th>
+                                        <td>REST</td>
+                                        <td>http://swagger.io/specification/</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">RAML</th>
+                                        <td>REST</td>
+                                        <td>http://raml.org/</td>
+
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">WSDL</th>
+                                        <td>SOAP</td>
+                                        <td>https://www.w3.org/TR/wsdl</td>
+
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">WADL</th>
+                                        <td>SOAP</td>
+                                        <td>https://wadl.java.net/</td>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- API Definition Language -->
+
+                <!-- API Interface Standards -->
+                <div class="card">
+                    <div class="card-header" id="heading2">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                API Interface Standards
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <table class="table table-striped mb-0">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Incoming Protocol</th>
+                                        <th scope="col">API Standard</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>HTTPS</td>
+                                        <td>REST and SOAP</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Outgoing Protocol</th>
+                                        <th scope="col">API Standard</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>HTTPS</td>
+                                        <td>REST and SOAP</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- API Interface Standards -->
+                <!-- API Performance Consideration -->
+                <div class="card">
+                    <div class="card-header" id="heading3">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                API Performance Consideration
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <h5 class="card-title">API Payload Size Limits</h5>
+                            <p class="card-text">APEX is designed for quick real-time information exchange; it is not suitable for services with intensive transactions or huge data extraction.</p>
+                            <p class="card-title">The recommended API data size is approximately 20-50 kB per transaction, up to a maximum of 2.5 MB.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- API Performance Consideration -->
+                <!-- API Security -->
+                <div class="card">
+                    <div class="card-header" id="heading4">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                API Security
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <h5 class="card-title">Transport Level Security Policy</h5>
+                            <p class="card-text">Inbound and outbound traffic are handled by a dedicated F5 proxy situated between the client and APEX platform. Recommended version is 1.2.</p>
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Communication Hop</th>
+                                        <th scope="col">Traffic</th>
+                                        <th scope="col">TLS</th>
+                                        <th scope="col">Certificate Type</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Client (Internet / Intranet) to F5 Proxy</td>
+                                        <td>Incoming</td>
+                                        <td>One-Way</td>
+                                        <td>Public</td>
+                                    </tr>
+                                    <tr>
+                                        <td>F5 Proxy to APEX</td>
+                                        <td>Incoming</td>
+                                        <td>One-Way</td>
+                                        <td>Self-Signed Internal</td>
+                                    </tr>
+                                    <tr>
+                                        <td>APEX to F5 Proxy</td>
+                                        <td>Outgoing</td>
+                                        <td>One-Way</td>
+                                        <td>Self-Signed Internal</td>
+                                    </tr>
+                                    <tr>
+                                        <td>F5 Proxy to Client (Internet / Intranet)</td>
+                                        <td>Outgoing</td>
+                                        <td>One-Way</td>
+                                        <td>Public</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <h5 class="card-title mt-4">Application Level Security Policy</h5>
+                            <p class="card-text">Application Level Security Policy supported by APEX.</p>
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Akana Security Policy Hop</th>
+                                        <th scope="col">Algorithm</th>
+                                        <th scope="col">Private Key Signing</th>
+                                        <th scope="col">APP ID</th>
+                                        <th scope="col">APP Secret</th>
+                                        <th scope="col">API Standards</th>
+                                        <th scope="col">GWSX Equivalent</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>API Consumer Application Security Policy</td>
+                                        <td>No</td>
+                                        <td>No</td>
+                                        <td>Yes</td>
+                                        <td>No</td>
+                                        <td>REST</td>
+                                        <td>L1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>API Consumer Application Security Policy</td>
+                                        <td>SHA256 with RSA</td>
+                                        <td>Yes</td>
+                                        <td>Yes</td>
+                                        <td>No</td>
+                                        <td>REST</td>
+                                        <td>L2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>WSS Security - Username Token</td>
+                                        <td>N.A</td>
+                                        <td>No</td>
+                                        <td>Yes</td>
+                                        <td>Yes</td>
+                                        <td>SOAP</td>
+                                        <td>L1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>WSS Security - X.509 Profile</td>
+                                        <td>N.A</td>
+                                        <td>Yes</td>
+                                        <td>No</td>
+                                        <td>No</td>
+                                        <td>SOAP</td>
+                                        <td>L2</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- API Security -->
+                <!-- Public Key Certificates Types -->
+                <div class="card">
+                    <div class="card-header" id="heading5">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                Public Key Certificates Types
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <p class="card-text">There are two types of certificates to be aware of, Root Certificate and Intermediate Certificate.</p>
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Certificate Type</th>
+                                        <th scope="col">Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Root Certificate</td>
+                                        <td>
+                                            It is a certificate issued by a trusted certificate authority (CA), and it served as a trust 
+                                            anchor that signed all the downstream certificates. This will be required to be shared 
+                                            with APEX team so as to import into the APEX trusted store so as to ensure secure connection is established.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Intermediate Certificate</td>
+                                        <td>This is required to be share with APEX team if there are use cases to 
+                                            verify a certificate authenticity through a chain of trust.
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <h5 class="card-title mt-4">Public Key Certificate Format</h5>
+                            <p class="card-text">You might need to prepare the following certificate format before you onboard.</p>
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Format</th>
+                                        <th scope="col">Mandatory</th>
+                                        <th scope="col">Purpose</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>.cer</td>
+                                        <td>Yes</td>
+                                        <td>
+                                            For import into APEX so as to trust your API endpoint (self-signed certificate is prohibited)<br>
+                                            For import into your APP for API request verification (depending on the chosen API security policy - mainly for WSS Security X.509 Profile, Sha256 with RSA and HMAC with RSA)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>.pfx</td>
+                                        <td>No</td>
+                                        <td>For import into APEX's Community Manager Test Client</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.p12</td>
+                                        <td>No</td>
+                                        <td>For import into APEX's Community Manager Test Client</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.pem</td>
+                                        <td>No</td>
+                                        <td>
+                                            For you own client testing<br>
+                                            Private key to sign your API request authorisation header<br>
+                                            Specific to Node.js Crypto library
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>.jks</td>
+                                        <td>No</td>
+                                        <td>
+                                            To import keys and a certificate that has been issued by 
+                                            a third party Certificate Authority
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <h5 class="card-title mt-4">Recommended Trusted Root Certificate Authority</h5>
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Certificate Authority</th>
+                                        <th scope="col">Link</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>digiCert</td>
+                                        <td>https://www.digicert.com/digicert-root-certificates.htm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Entrust</td>
+                                        <td>https://www.entrust.com/</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Comodo / Sectigo</td>
+                                        <td>
+                                            https://www.comodo.com/
+                                            https://www.sectigo.com
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Verisign</td>
+                                        <td>https://www.verisign.com/</td>
+                                    </tr>
+                                    <tr>
+                                        <td>GlobalSign</td>
+                                        <td>https://www.globalsign.com/en-sg</td>
+                                    </tr>
+                                    <tr>
+                                        <td>GeoTrust</td>
+                                        <td>https://www.geotrust.com/</td>
+                                    </tr>
+                                    <tr>
+                                        <td>NeTrust</td>
+                                        <td>https://www.netrust.net/</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Thawte</td>
+                                        <td>http://thawte.com/</td>
+                                    </tr>
+                                    <tr>
+                                        <td>SGCore (Intranet only)</td>
+                                        <td>https://sgcore-portal.sgnet.gov.sg/indexSR.html</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- Public Key Certificates Types -->
+                <!-- Infrastructure Preperation -->
+                <div class="card">
+                    <div class="card-header" id="heading6">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                                Infrastructure Preperation
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <h5 class="card-title">Transport Layer Security</h5>
+                            <p class="card-text">Your system need to enable TLS version 1.2 so as to establish a secure communication channel between APEX and your system.</p>
+                            <h5 class="card-title">
+                                X.509 Server Certificate
+                            </h5>
+                            <p class="card-text">
+                                Ensure your system hostnames are registered with a public certificate authority so as to allow APEX to establish a connection to your system.
+                            </p>  
+                            <h5 class="card-title">
+                                X.509 Signing Certificate
+                            </h5>
+                            <p class="card-text">
+                                Optionally, to prepare for API authentication through PKI (Public Key Infrastructure) signing, please prepare a X.509 certificate (2048 key length or above) signed by a public root certificate.<br><br>
+                                Do speak with the APEX team for more information as you may required assistance to import both Root CA and intermediate certificates.
+                            </p> 
+                            <h5 class="card-title">
+                                Firewall Rules Implementation
+                            </h5>
+                            <p class="card-text">
+                                For API Producer, please raise a firewall rule request so that APEX incoming traffic can interface with your API endpoints. Additionally, please provide APEX team your endpoints IP address for sanity connection check.<br><br>
+                                For API Consumer, please raise a firewall rule request, depending on your internet network setup, so that your client can interface with APEX.
+                            </p> 
+                            <h5 class="card-title">
+                                Network Connection and Firewall Policies
+                            </h5>
+                            <p class="card-text">
+                                <ul>
+                                    <li>Opening of firewall is required for APEX depending on the agency hosting location</li>
+                                    <li>APEX is hosted in GDC2</li>
+                                    <li>Playload is subject to deep packet inspection, application layer will need to handle security incident</li>
+                                </ul>
+                            </p> 
+                        </div>
+                    </div>
+                </div>
+                <!-- Infrastructure Preperation -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="tab-pane fade" id="v-pills-pv-projects" role="tabpanel" aria-labelledby="v-pills-pv-projects-tab">
+    Projects
+    
+</div>
+
+<div class="tab-pane fade" id="v-pills-pv-create-apis" role="tabpanel" aria-labelledby="v-pills-pv-create-apis-tab">
+    Create APIs
+</div>
+
+<div class="tab-pane fade" id="v-pills-con-create-app" role="tabpanel" aria-labelledby="v-pills-con-create-app-tab">
+    Create APPs
+</div>
+
+<div class="tab-pane fade" id="v-pills-con-access-apis" role="tabpanel" aria-labelledby="v-pills-con-access-apis-tab">
+    Access APIs
+</div>
+
+<div class="tab-pane fade" id="v-pills-userGuide" role="tabpanel" aria-labelledby="v-pills-userGuide-tab">
+    User Guides
+</div>

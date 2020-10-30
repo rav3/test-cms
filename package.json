@@ -1,0 +1,19 @@
+{
+  "name": "apex-custom-pages",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "copy:footer": "cp -r _includes/footer.htm ../static-pages",
+    "copy:js": "cp -r node_modules/bootstrap/dist/js/bootstrap.bundle.min.js assets/js/ && cp -r node_modules/jquery/dist/jquery.slim.min.js assets/js/",
+    "jekyll": "npm run copy:js && jekyll serve --livereload",
+    "jekyll:build": "npm run copy:footer && npm run copy:js && JEKYLL_ENV=production jekyll build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "jquery": "^3.5.1"
+  }
+}

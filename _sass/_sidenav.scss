@@ -1,0 +1,33 @@
+.nav-custom{
+    .nav-link{
+        border-radius: 0;
+        @extend .pl-0;
+        
+        &.active{
+            background-color: transparent;
+            color: $primary;
+            border-color: $primary;
+            border-width: 2px;
+        }
+
+        > .nav-link{
+            border-bottom: 0;
+            @extend .pb-1;
+            &:last-child{
+                @extend .pb-0;
+            }
+        }
+
+        &-group{
+            .nav-link-header{
+                padding: 1.25rem 1rem 0.5rem;
+                
+            }
+            .nav-link{
+                border:0;
+                
+            }
+            border-bottom: 1px solid $link-color;
+        }
+    }
+}
