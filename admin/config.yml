@@ -1,20 +1,17 @@
 backend:
     name: git-gateway
     repo: rav3/test-cms
+local_backend: true
 
 media_folder: "assets/images"
 collections:
-    - name: "tourInfo"
-      label: "Tour Info"
+    - name: "Home Page"
+      label: "Home Page"
       description: "Upcoming tours and their availability"
       files:
-        - label: "tour"
-          name: "Tour"
+        - label: "Hero Banner"
+          name: "Hero Banner"
           file: "_data/site.yml"
           fields:
-            - label: "Tour List"
-              name: "tourList"
-              widget: "list"
-              fields:
-                - {label: "Title", name: "title", widget: "string"}
-                - {label: "Description", name: "description", widget: "string"}
+            - {label: "Title", name: "title", widget: "string"}
+            - {label: "Description", name: "description", widget: "string"}
