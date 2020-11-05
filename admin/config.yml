@@ -1,7 +1,8 @@
 backend:
     name: git-gateway
-    repo: APEX2/apex-cms
+    repo: rav3/test-cms
 local_backend: true
+show_preview_links: true
 
 media_folder: "assets/images"
 collections:
@@ -10,8 +11,15 @@ collections:
       description: "Upcoming tours and their availability"
       files:
         - label: "Hero Banner"
-          name: "Hero Banner"
+          name: "hero-banner"
           file: "_data/site.yml"
           fields:
             - {label: "Title", name: "title", widget: "string"}
             - {label: "Description", name: "description", widget: "string"}
+
+        - label: "Section 1"
+          name: "section-one"
+          file: "_data/site.yml"
+          fields:
+            - {label: "Title", name: "section1.title", widget: "string"}
+            - {label: "Sub Title", name: "section1.subTitle", widget: "string"}
