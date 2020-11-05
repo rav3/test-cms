@@ -1,25 +1,51 @@
 backend:
-    name: git-gateway
-    repo: rav3/test-cms
+    # name: git-gateway
+    # repo: rav3/test-cms
+    name: test-repo
 local_backend: true
-show_preview_links: true
+logo_url: https://placehold.it/50x50
 
-media_folder: "assets/images"
+media_folder: assets/images
 collections:
-    - name: "Home Page"
-      label: "Home Page"
-      description: "Upcoming tours and their availability"
+    - name: homePage
+      label: Home Page
+      description: Upcoming tours and their availability
       files:
-        - label: "Hero Banner"
-          name: "hero-banner"
-          file: "_data/site.yml"
+        - label: Home Page
+          name: content
+          file: _data/home/content.yml
+          widget : object
           fields:
-            - {label: "Title", name: "title", widget: "string"}
-            - {label: "Description", name: "description", widget: "string"}
-
-        - label: "Section 1"
-          name: "section-one"
-          file: "_data/site.yml"
-          fields:
-            - {label: "Title", name: "section1.title", widget: "string"}
-            - {label: "Sub Title", name: "section1.subTitle", widget: "string"}
+            - label: Hero Banner
+              name: 'heroBanner'
+              widget: object
+              fields: 
+                - {label: Title, name: title, widget: string}
+                - {label: Description, name: description, widget: string}
+            - label: Section 1
+              name: section1
+              widget: object
+              fields:
+                - {label: Title, name: title, widget: string}
+                - {label: Description, name: description, widget: string}
+                - label: list
+                  name: list
+                  widget: list
+                  fields:
+                    - {label: Title, name: title, widget: string}
+                    - {label: Image, name: image, widget: image}
+                    - {label: Description, name: description, widget: string}
+            - label: Section 2
+              name: section2
+              widget: object
+              fields:
+                - {label: Title, name: title, widget: string}
+                - {label: Description, name: description, widget: string}
+                - label: list
+                  name: list
+                  widget: list
+                  fields:
+                    - {label: Title, name: title, widget: string}
+                    - {label: Image, name: image, widget: image}
+                    - {label: Description, name: description, widget: string}
+                    - {label: Link, name: link, widget: string}

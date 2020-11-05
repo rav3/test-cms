@@ -14,40 +14,30 @@ permalink: /
         <div class="row d-flex align-items-center">
             <div class="col-md-12 col-lg-4">
                 <header class="mb-4">
-                    <h1 class="header text-primary mb-4">{{site.data.site.title}}</h1>
-                    <h4 class="text-info">{{site.data.site.description}}</h4>
+                    <h1 class="header text-primary mb-4">{{site.data.home.content.heroBanner.title}}</h1>
+                    <h4 class="text-info">{{site.data.home.content.heroBanner.description}}</h4>
                 </header>
                 <a href="" class="btn btn-lg btn-primary">Find out more →</a>
             </div>
         </div>
     </div>
 </section>
-<section class="bg-white d-flex align-items-center h-45vh">
+<section class="bg-white d-flex align-items-center">
     <div class="container">
         <div class="row mb-4">
             <div class="col">
-                <h2 class="text-primary">The platform for secure digital services</h2>
-                <p class="text-info">APEX makes it simple to publish, maintain, monitor and secure your APIs.</p>
+                <h2 class="text-primary">{{site.data.home.content.section1.title}}</h2>
+                <p class="text-info">{{site.data.home.content.section1.description}}</p>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4">
-                <h4 class="text-grey-700 mb-4">Management</h4>
-                <img class="mb-4" src="../assets/images/management.png" alt="">
-                <p>Externalize your data and services as APIs.
-                    Drive partner adoption and provide deep
-                    insights to accelerate your digital transformation</p>
-            </div>
-            <div class="col-md-4">
-                <h4 class="text-grey-700 mb-4">Security</h4>
-                <img class="mb-4" src="../assets/images/security.png" alt="">
-                <p>Balance demands of opening up your applications and APIs with partners and digital channels with enterprise grade security.</p>
-            </div>
-            <div class="col-md-4">
-                <h4 class="text-grey-700 mb-4">Microservices</h4>
-                <img class="mb-4" src="../assets/images/microservice.png" alt="">
-                <p>Provides service discovery, security enforcement and audting of microservices on a variety of containerization and cloud platforms.</p>
-            </div>
+            {% for item in site.data.home.content.section1.list %}
+                <div class="col-md-4">
+                    <h4 class="text-grey-700 mb-4">{{item.title}}</h4>
+                    <img class="mb-4" src="{{item.image}}" alt="">
+                    <p>{{item.description}}</p>
+                </div>
+            {% endfor %}
         </div>
     </div>
 </section>
@@ -57,8 +47,8 @@ permalink: /
             <div class="col-md-10 col-sm-12 offset-md-1">
                 <div class="row">
                     <div class="col">
-                        <h2 class="text-primary">APEX scales with you</h2>
-                        <p class="text-info">APEX offers a wider range of customer service tools for projects of all sizes</p>
+                        <h2 class="text-primary">{{site.data.home.content.section2.title}}</h2>
+                        <p class="text-info">{{site.data.home.content.section2.description}}</p>
                     </div>
                 </div>
             </div>

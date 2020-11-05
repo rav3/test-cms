@@ -1,0 +1,36 @@
+heroBanner:
+  title: Build differently with APEX
+  description: Your central point to manage, monitor and harden security for APIs
+    within the Whole-of-Government
+section1:
+  title: The platform for secure digital services
+  description: APEX makes it simple to publish, maintain, monitor and secure your APIs.
+  list:
+    - title: Security
+      image: ../assets/images/security.png
+      description: Balance demands of opening up your applications and APIs with
+        partners and digital channels with enterprise grade security.
+    - title: Management
+      image: ../assets/images/management.png
+      description: Externalize your data and services as APIs. Drive partner adoption
+        and provide deep insights to accelerate your digital transformation.
+    - title: Microservices
+      image: ../assets/images/microservice.png
+      description: Provides service discovery, security enforcement and audting of
+        microservices on a variety of containerization and cloud platforms.
+section2:
+  title: APEX scales with you
+  description: APEX offers a wider range of customer service tools for projects of all sizes.
+  list:
+    - title: Security
+      image: ../assets/images/security.png
+      description: Balance demands of opening up your applications and APIs with
+        partners and digital channels with enterprise grade security.
+    - title: Management
+      image: ../assets/images/management.png
+      description: Externalize your data and services as APIs. Drive partner adoption
+        and provide deep insights to accelerate your digital transformation.
+    - title: Microservices
+      image: ../assets/images/microservice.png
+      description: Provides service discovery, security enforcement and audting of
+        microservices on a variety of containerization and cloud platforms.
