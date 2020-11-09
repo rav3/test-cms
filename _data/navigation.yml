@@ -1,24 +1,18 @@
-- title: Home
-  url: /landing/
-  url-prod: '#/home/landing'
-
-- title: Get Started
-  url: /getStarted/
-  url-prod: '#/home/getStarted'
-  desc: >-
-    Find out how to get up and running with APEX, from signing up to what information we need from you to setup a account with us.
-  img: ../assets/images/get-started.png
-
-- title: Learn Essentials
-  url: /learnEssentials/
-  url-prod: '#/home/learnEssentials'
-  desc: >-
-    Find out how to get up and running with APEX, from signing up to what information we need from you to setup a account with us.
-  img: ../assets/images/learn-essentials.png
-
-- title: Common Questions
-  url: /commonQuestions/
-  url-prod: '#/home/commonQuestions'
-  desc: >-
-    Hear what people are saying and find answers to the questions we get.
-  img: ../assets/images/common-questions.png
+mainnav:
+  - title: Home
+    url: /
+  - title: Get Started
+    url: /getStarted/
+    desc: >-
+      Find out how to get up and running with APEX, from signing up to what information we need from you to setup a account with us.
+    img: ../assets/images/get-started.png
+  - title: Learn Essentials
+    url: /learnEssentials/
+    desc: >-
+      Find out how to get up and running with APEX, from signing up to what information we need from you to setup a account with us.
+    img: ../assets/images/learn-essentials.png
+  - title: Common Questions
+    url: /commonQuestions/
+    desc: >-
+      Hear what people are saying and find answers to the questions we get.
+    img: ../assets/images/common-questions.png

@@ -56,26 +56,34 @@ permalink: /
         <div class="row">
             <div class="col">
                 <div class="card-deck">
-                    {% assign collections = site.collections | sort: "order" %}
-                    {% for collection in collections %}
-                        {% if collection.label !='posts' and collection.label !='landing' %}
+                    {% for mainnav in site.data.navigation.mainnav %}
+                        {% if mainnav.title !='Home' %}
                         <div class="card card-hoverable border-0 pb-4">
-                            <img src="{{collection.img}}" alt="" class="card-img-top w-80">
+                            <img src="{{mainnav.img}}" alt="" class="card-img-top w-80">
                             <div class="card-body">
                                 <h4 class="card-title text-grey-700">
-                                    {{collection.title}}
+                                    {{mainnav.title}}
                                 </h4>
-                                <p class="card-text">{{collection.desc}}</p>
+                                <p class="card-text">{{mainnav.desc}}</p>
                             </div>
-                            {% if jekyll.environment == "production" %}
-                                <a href="{{collection.link-prod}}" class="card-link mt-auto stretched-link">Find out more →</a>
-                            {% else %}
-                                <a href="{{collection.permalink}}" class="card-link mt-auto stretched-link">Find out more →</a>
-                            {% endif %}
-                        </div>
-                        {% endif %}
+                            <a href="{{mainnav.permalink}}" class="card-link mt-auto stretched-link">Find out more →</a>
+                        </div>  
+                        {% endif %}    
                     {% endfor %}
                 </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <ul>
+                    {% for post in site.posts %}
+                    <a href="{{ post.url}}" class="bold">{{ post.title }}</a>
+                    {% endfor %}
+                </ul>
             </div>
         </div>
     </div>

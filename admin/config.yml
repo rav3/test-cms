@@ -7,45 +7,43 @@ logo_url: https://placehold.it/50x50
 
 media_folder: assets/images
 collections:
-    - name: homePage
-      label: Home Page
-      description: Upcoming tours and their availability
-      files:
-        - label: Home Page
-          name: content
-          file: _data/home/content.yml
-          widget : object
-          fields:
-            - label: Hero Banner
-              name: 'heroBanner'
-              widget: object
-              fields: 
-                - {label: Title, name: title, widget: string}
-                - {label: Description, name: description, widget: string}
-            - label: Section 1
-              name: section1
-              widget: object
-              fields:
-                - {label: Title, name: title, widget: string}
-                - {label: Description, name: description, widget: string}
-                - label: list
-                  name: list
-                  widget: list
-                  fields:
-                    - {label: Title, name: title, widget: string}
-                    - {label: Image, name: image, widget: image}
-                    - {label: Description, name: description, widget: string}
-            - label: Section 2
-              name: section2
-              widget: object
-              fields:
-                - {label: Title, name: title, widget: string}
-                - {label: Description, name: description, widget: string}
-                - label: list
-                  name: list
-                  widget: list
-                  fields:
-                    - {label: Title, name: title, widget: string}
-                    - {label: Image, name: image, widget: image}
-                    - {label: Description, name: description, widget: string}
-                    - {label: Link, name: link, widget: string}
+  - label: Home Page
+    name: homePage
+    description: Upcoming tours and their availability
+    files:
+      - label: Content
+        name: content
+        file: _data/home/content.yml
+        widget : object
+        fields:
+          - label: Hero Banner
+            name: heroBanner
+            widget: object
+            fields: 
+              - {label: Title, name: title, widget: string}
+              - {label: Description, name: description, widget: string}
+          - label: Section 1
+            name: section1
+            widget: object
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Description, name: description, widget: string}
+              - label: list
+                name: list
+                widget: list
+                fields:
+                  - {label: Title, name: title, widget: string}
+                  - {label: Image, name: image, widget: image}
+                  - {label: Description, name: description, widget: string}
+  - label: "Post"
+    name: "post"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      # - {label: "Featured Image", name: "thumbnail", widget: "image"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      # - {label: Image, name: img, widget: image}
+

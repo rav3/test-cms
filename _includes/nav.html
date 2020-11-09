@@ -1,21 +1,25 @@
 <section class="py-3">
     <div class="container">
-        <nav class="nav nav-pills nav-top-custom justify-content-center">
-            {% assign collections = site.collections | sort: 'order' %}
-            {% for collection in collections %}
-                {% if collection.label !='posts' %}
+        <nav class="nav nav-pills nav-top-custom navbar-expand-lg">
+            <a class="navbar-brand" href="/">
+                <img src="../assets/images/apex.svg" width="50" height="47" class="d-inline-block" alt="">
+                APEX
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                {% for mainnav in site.data.navigation.mainnav %}
+                    {% if mainnav.title !='Home' %}
                     {% assign class = nil %}
-                    {% if page.url contains collection.label %}
+                    {% assign pageName = mainnav.url | remove : "/" %}
+                    {% if page.url contains pageName %}
                         {% assign class = 'active' %}
                     {% endif %}
-                    {% if jekyll.environment == "production" %}
-                        <a href="{{collection.link-prod}}" class="nav-link text-lg {{class}}"><h6 class="m-0">{{collection.title}}</h6></a>
-                        {% else %}
-                        <a href="{{collection.permalink}}" class="nav-link text-lg {{class}}"><h6 class="m-0">{{collection.title}}</h6></a>
+                    <a href="{{mainnav.url}}" class="nav-item nav-link text-lg {{class}}"><h6 class="m-0">{{mainnav.title}}</h6></a>
                     {% endif %}
-                    
-                {% endif %}
-            {% endfor %}
-          </nav>
+                {% endfor %}
+            </div>
+        </nav>
     </div>
 </section>

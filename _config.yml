@@ -31,43 +31,6 @@ version: 2.0.0
 sass:
   sass_dir: _sass
 
-collections_dir: collections
-collections:
-  landing:
-    title: 'Home'
-    permalink: /
-    link-prod: '#/home/landing'
-    img: ../assets/images/get-started.png
-    desc: >-
-    output: true
-    order: 0
-  getStarted:
-    title: 'Get Started'
-    permalink: /getStarted/
-    link-prod: '#/home/getStarted'
-    img: ../assets/images/get-started.png
-    desc: >-
-      Find out how to get up and running with APEX, from signing up to what information we need from you to setup a account with us.
-    output: true
-    order: 1
-  learnEssentials:
-    title: 'Learn Essentials'
-    permalink: /learnEssentials/
-    link-prod: '#/home/learnEssentials'
-    img: ../assets/images/learn-essentials.png
-    desc: >-
-      Find out how to get up and running with APEX, from signing up to what information we need from you to setup a account with us.
-    output: true
-    order: 2
-  commonQuestions:
-    title: 'Common Questions'
-    permalink: /commonQuestions/
-    link-prod: '#/home/commonQuestions'
-    img: ../assets/images/common-questions.png
-    desc: >-
-      Hear what people are saying and find answers to the questions we get.
-    output: true
-    order: 3
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
